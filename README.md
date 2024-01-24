@@ -2,7 +2,7 @@
 
 Please cite our paper if you use the code ✔
 ```
-@inproceedings{peng2023maxkgnn,
+@inproceedings{peng2024maxkgnn,
   title={MaxK-GNN: Towards Theoretical Speed Limits for Accelerating Graph Neural Networks Training},
   author={Peng, Hongwu and Xie, Xi and Shivdikar, Kaustubh and Hasan, MD and Zhao, Jiahui and Huang, Shaoyi and Khan, Omer and Kaeli, David and Ding, Caiwen},
   booktitle={Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
