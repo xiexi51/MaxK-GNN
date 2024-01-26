@@ -152,8 +152,8 @@ export gpu=0
 export seed=97
 bash scripts_train/${dataset}_relu.sh ${model} ${gpu} ${seed}
 ```
-- In the scripts, dataset can be chosen between ```[flickr, ogbn_products, ogbn_proteins, reddit, yelp]```. 
-- Model can be chosen between ```[sage, gcn, gin]```. 
+- In the scripts, `dataset` can be chosen between ```[flickr, ogbn_products, ogbn_proteins, reddit, yelp]```. 
+- `model` can be chosen between ```[sage, gcn, gin]```. 
 - You can change ```gpu``` and ```seed``` to run multiple experiment and conduct average on final obtained accuracy.  
 - Experiment result and logging can be found in ```experiment/${dataset}_seed${seed}/${model}_relu```
 
