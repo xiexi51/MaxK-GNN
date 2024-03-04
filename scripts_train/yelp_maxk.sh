@@ -12,7 +12,7 @@ model="$4"
 export dataset=yelp
 
 mkdir -p ./log/${dataset}_seed${seed}/
-nohup python maxk_gnn_dgl.py --dataset ${dataset} --model ${model} \
+nohup python -u maxk_gnn_dgl.py --dataset ${dataset} --model ${model} \
  --hidden_layers 4 --hidden_dim 384 --nonlinear "maxk" --maxk ${k} \
  --dropout 0.1 --norm --w_lr 0.001 --seed ${seed} \
  --path experiment/${dataset}_seed${seed}/${model}_max${k} --epochs 3000 --gpu ${gpu} \
