@@ -18,7 +18,7 @@ else
 fi
 
 mkdir -p ./log/${dataset}_seed${seed}/
-nohup python maxk_gnn_dgl.py --dataset ${dataset} --model ${model} ${selfloop} \
+nohup python -u maxk_gnn_dgl.py --dataset ${dataset} --model ${model} ${selfloop} \
  --hidden_layers 3 --hidden_dim 256 --nonlinear "maxk" --maxk ${k} \
  --dropout 0.5 --norm --w_lr 0.003 --seed ${seed} \
  --path experiment/${dataset}_seed${seed}/${model}_max${k} --epochs 500 --gpu ${gpu} <<< "y" \
