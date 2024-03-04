@@ -10,7 +10,7 @@ seed="$3"
 export dataset=flickr
 
 mkdir -p ./log/${dataset}_seed${seed}/
-nohup python maxk_gnn_dgl.py --dataset ${dataset}  --model ${model} --selfloop \
+nohup python -u maxk_gnn_dgl.py --dataset ${dataset}  --model ${model} --selfloop \
  --hidden_layers 3 --hidden_dim 256 --nonlinear "relu" \
  --dropout 0.2 --norm --w_lr 0.001 --seed ${seed} \
  --path experiment/${dataset}_seed${seed}/${model}_relu --epochs 400 --gpu ${gpu} \
